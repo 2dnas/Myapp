@@ -1,5 +1,6 @@
 package com.example.products.model
 
+import androidx.room.Embedded
 import com.google.gson.annotations.SerializedName
 
 
@@ -10,7 +11,7 @@ data class Product(
 
 
 data class ProductData(
-        val id : Int?,
+        var id : Int?,
         val name : String?,
         val description : String?,
         val image : String?,
@@ -23,9 +24,10 @@ data class ProductData(
 
 
 data class ProductDataCategories(
-        val id : Int?,
-        val name : String?,
+        var id : Int? = 0,
+        val name : String? = "",
 )
+
 
 data class ProductMeta(
         val pagination : ProductPaging

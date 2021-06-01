@@ -8,7 +8,7 @@ import com.example.products.model.Product
 interface ProductsDao {
 
     @Query("SELECT * FROM PRODUCTS")
-    fun getAllProduct() : List<DbProduct>?
+    fun getAllProduct() : MutableList<DbProduct>?
 
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

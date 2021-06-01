@@ -3,6 +3,7 @@ package com.example.products.db
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.products.model.ProductDataCategories
 
 @Entity(tableName = "PRODUCTS")
 data class DbProduct(
